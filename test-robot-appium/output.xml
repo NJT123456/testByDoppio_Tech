@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.10.10 on win32)" generated="20231112 22:34:19.580" rpa="false" schemaversion="4">
+<suite id="s1" name="Ep2 Live" source="C:\Users\USER\Desktop\testMobile\testByDoppio_Tech\test-robot-appium\ep2_live.robot">
+<test id="s1-t1" name="Open Test Application for android" line="6">
+<kw name="Open Test Application">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>remote_url=http://localhost:4723/wd/hub</arg>
+<arg>deviceName=Pixel_4_API_29_Flutter</arg>
+<arg>platformVersion=10</arg>
+<arg>platformName=android</arg>
+<arg>appPackage=com.material.components</arg>
+<arg>appActivity=com.material.components.activity.MainMenu</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20231112 22:34:19.830" endtime="20231112 22:34:32.266"/>
+</kw>
+<status status="PASS" starttime="20231112 22:34:19.830" endtime="20231112 22:34:32.266"/>
+</kw>
+<kw name="Close Popup When App Start">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.material.components:id/bt_close</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231112 22:34:32.626" level="INFO">criteria is com.material.components:id/bt_close</msg>
+<status status="PASS" starttime="20231112 22:34:32.267" endtime="20231112 22:34:32.626"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>id=com.material.components:id/bt_close</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20231112 22:34:32.627" level="WARN">Keyword 'AppiumLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20231112 22:34:32.858" level="INFO">criteria is com.material.components:id/bt_close</msg>
+<status status="PASS" starttime="20231112 22:34:32.627" endtime="20231112 22:34:32.858"/>
+</kw>
+<status status="PASS" starttime="20231112 22:34:32.267" endtime="20231112 22:34:32.858"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>android=UiSelector().className("android.widget.TextView").text("Expansion Panels")</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20231112 22:34:32.860" endtime="20231112 22:34:33.433"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>android=UiSelector().className("android.widget.TextView").text("Expansion Panels")</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20231112 22:34:33.433" level="WARN">Keyword 'AppiumLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="PASS" starttime="20231112 22:34:33.433" endtime="20231112 22:34:33.955"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231112 22:34:36.967" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231112 22:34:33.955" endtime="20231112 22:34:36.967"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>android=UiSelector().className("android.widget.TextView").text("Basic")</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20231112 22:34:36.968" level="WARN">Keyword 'AppiumLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="PASS" starttime="20231112 22:34:36.968" endtime="20231112 22:34:37.255"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.material.components:id/bt_toggle_input</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231112 22:34:38.310" level="INFO">criteria is com.material.components:id/bt_toggle_input
+criteria is com.material.components:id/bt_toggle_input
+criteria is com.material.components:id/bt_toggle_input</msg>
+<status status="PASS" starttime="20231112 22:34:37.255" endtime="20231112 22:34:38.310"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>id=com.material.components:id/bt_toggle_input</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20231112 22:34:38.310" level="WARN">Keyword 'AppiumLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20231112 22:34:38.511" level="INFO">criteria is com.material.components:id/bt_toggle_input</msg>
+<status status="PASS" starttime="20231112 22:34:38.310" endtime="20231112 22:34:38.511"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231112 22:34:41.527" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231112 22:34:38.513" endtime="20231112 22:34:41.527"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>android=UiSelector().className("android.widget.RadioButton").text("Male")</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20231112 22:34:41.528" level="WARN">Keyword 'AppiumLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<status status="PASS" starttime="20231112 22:34:41.527" endtime="20231112 22:34:41.747"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>id=com.material.components:id/bt_save_input</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20231112 22:34:41.748" level="WARN">Keyword 'AppiumLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20231112 22:34:42.404" level="INFO">criteria is com.material.components:id/bt_save_input</msg>
+<status status="PASS" starttime="20231112 22:34:41.748" endtime="20231112 22:34:42.405"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Data saved</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20231112 22:34:42.405" endtime="20231112 22:34:42.635"/>
+</kw>
+<status status="PASS" starttime="20231112 22:34:19.830" endtime="20231112 22:34:42.635"/>
+</test>
+<status status="PASS" starttime="20231112 22:34:19.583" endtime="20231112 22:34:42.636"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ep2 Live">Ep2 Live</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231112 22:34:32.627" level="WARN">Keyword 'AppiumLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20231112 22:34:33.433" level="WARN">Keyword 'AppiumLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20231112 22:34:36.968" level="WARN">Keyword 'AppiumLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20231112 22:34:38.310" level="WARN">Keyword 'AppiumLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20231112 22:34:41.528" level="WARN">Keyword 'AppiumLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20231112 22:34:41.748" level="WARN">Keyword 'AppiumLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+</errors>
+</robot>
